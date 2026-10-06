@@ -1,0 +1,62 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(164, 129, 71, 0.15);
+  margin-top: 80px;
+}
+
+.grid > * {
+  height: 100%;
+}
+
+.card {
+  background: var(--color-bg-dark);
+  padding: 40px;
+  min-height: 346px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: var(--text-display);
+  line-height: 88px;
+  color: var(--color-accent-strong);
+  font-weight: var(--font-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.unit {
+  font-size: var(--text-2xl);
+  font-style: italic;
+  color: rgba(164, 129, 71, 0.75);
+  margin-left: 12px;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: var(--text-xs);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(253, 251, 247, 0.8);
+}
+
+.copy {
+  margin-top: auto;
+  padding-top: 21px;
+  border-top: 1px solid rgba(164, 129, 71, 0.15);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 506px;
+  gap: 64px;
+}
+
+@media (max-width: 900px) {
+  .grid,
+  .head {
+    grid-template-columns: 1fr;
+  }
+}

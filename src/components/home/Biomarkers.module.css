@@ -1,0 +1,50 @@
+.intro {
+  max-width: 768px;
+  margin: 0 auto 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.scroller {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-inline: max(var(--container-pad), calc((100vw - var(--container-max)) / 2 + var(--container-pad)));
+  scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 288px;
+  background: var(--color-surface-card);
+  border-radius: var(--radius-pill);
+  padding: 16px 16px 24px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 312px;
+  object-fit: cover;
+  border-radius: var(--radius-pill);
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-size: var(--text-lg);
+  font-weight: var(--font-regular);
+}
+
+.card p {
+  margin-top: 6px;
+  padding-inline: 16px;
+  font-size: var(--text-xs);
+  line-height: 17px;
+}

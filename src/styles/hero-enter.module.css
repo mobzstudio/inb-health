@@ -1,0 +1,29 @@
+@keyframes fadeRise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.enter,
+.delay1,
+.delay2,
+.delay3 {
+  animation: fadeRise var(--duration-hero) var(--ease-out) both;
+}
+
+.delay1 {
+  animation-delay: 80ms;
+}
+
+.delay2 {
+  animation-delay: 160ms;
+}
+
+.delay3 {
+  animation-delay: 240ms;
+}

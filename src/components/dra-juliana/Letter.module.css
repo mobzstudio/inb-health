@@ -1,0 +1,144 @@
+.wrap {
+  max-width: 900px;
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(164, 129, 71, 0.3);
+}
+
+.header p {
+  max-width: 672px;
+}
+
+.act {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 48px;
+}
+
+.roman span {
+  display: block;
+  font-size: var(--text-9xl);
+  line-height: 1;
+  color: var(--color-accent-strong);
+}
+
+.roman p {
+  margin-top: 12px;
+  font-size: var(--text-2xs);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+  max-width: 9ch;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.body h3 {
+  font-size: var(--text-6xl);
+  line-height: 40px;
+  font-weight: var(--font-light);
+}
+
+.aside {
+  margin-top: 8px;
+  max-width: 670px;
+  padding: 12px 0 12px 34px;
+  border-left: 2px solid var(--color-border-gold-max);
+  background: rgba(250, 246, 238, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.aside p {
+  font-size: var(--text-2xl);
+  line-height: 28px;
+  font-style: italic;
+}
+
+.sign {
+  padding-top: 64px;
+  border-top: 1px solid rgba(164, 129, 71, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signRow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.signRow img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--color-border-gold-max);
+}
+
+.name {
+  margin-bottom: 8px;
+  font-size: var(--text-7xl);
+  line-height: 1;
+  font-style: italic;
+  font-weight: var(--font-light);
+  color: var(--color-text);
+}
+
+.signRow p {
+  font-size: var(--text-md);
+  line-height: 20px;
+  color: var(--inb-taupe);
+}
+
+@media (max-width: 800px) {
+  .wrap {
+    gap: 64px;
+  }
+
+  .act {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .roman {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .roman span {
+    font-size: var(--text-7xl);
+  }
+
+  .roman p {
+    max-width: none;
+  }
+
+  .name {
+    font-size: var(--text-5xl);
+  }
+
+  .signRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,14 @@
+.inner {
+  text-align: center;
+}
+
+.list {
+  text-align: left;
+  margin-top: 64px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}

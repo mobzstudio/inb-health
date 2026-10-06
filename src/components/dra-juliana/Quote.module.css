@@ -1,0 +1,29 @@
+.inner {
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+  padding-inline: var(--container-pad);
+}
+
+.inner blockquote {
+  margin: 24px 0 32px;
+  font-size: var(--text-8xl);
+  line-height: 1;
+  font-weight: var(--font-light);
+  font-style: italic;
+  color: var(--color-text-on-dark);
+}
+
+.attr {
+  font-size: var(--text-2xs);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark-subtle);
+}
+
+@media (max-width: 700px) {
+  .inner blockquote {
+    font-size: var(--text-6xl);
+    line-height: 1.1;
+  }
+}

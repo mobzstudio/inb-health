@@ -1,0 +1,64 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-dark);
+  padding: var(--space-40) var(--page-gutter);
+}
+
+.markLeft,
+.markRight {
+  position: absolute;
+  width: 461px;
+  height: auto;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.markLeft {
+  left: 29px;
+  top: -275px;
+}
+
+.markRight {
+  right: 27px;
+  bottom: -275px;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.aside {
+  border-left: 1px solid rgba(164, 129, 71, 0.3);
+  padding-left: 41px;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    border-left: 0;
+    padding-left: 0;
+    border-top: 1px solid rgba(164, 129, 71, 0.3);
+    padding-top: 24px;
+  }
+
+  .markLeft,
+  .markRight {
+    display: none;
+  }
+}

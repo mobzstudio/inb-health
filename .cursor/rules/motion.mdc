@@ -1,0 +1,17 @@
+---
+description: Linguagem de motion do INB Health — tokens, primitivos e proibições.
+alwaysApply: true
+---
+
+# Motion
+
+Fonte de verdade: [docs/motion.md](docs/motion.md). Tokens: `src/lib/motion.ts` + `src/styles/tokens.css` (manter iguais). Primitivos: `@/components/motion`.
+
+- Usar `motion` (motion.dev). Não usar GSAP, Lenis, Lottie, R3F, View Transitions, AnimateNumber.
+- Entrada de seção: `Reveal`. Cards: `Stagger` + `StaggerItem punch`. Números: `CountUp`.
+- Hover de UI: CSS `--duration-fast` / `--ease-out`. Não misturar CSS `transform` e Motion no mesmo elemento.
+- H1 do hero visível no first paint — nunca `opacity: 0` via JS.
+- Seções continuam Server Components; o island client é o primitivo.
+- Biomarcadores: fileira estática, sem marquee. Serviços: órbita CSS, não reescrever em Motion x/y.
+- Novo timing = token nos dois arquivos, nunca valor mágico.
+- `prefers-reduced-motion` e `[data-reveal]` já cobertos no layout/globals — não quebrar.

@@ -1,0 +1,49 @@
+.text {
+  font-family: var(--font-serif);
+  font-weight: var(--font-light);
+}
+
+.body {
+  font-size: var(--text-xl);
+  line-height: 28px;
+}
+
+.sm {
+  font-size: var(--text-md);
+  line-height: 22.75px;
+}
+
+.lg {
+  font-size: var(--text-2xl);
+  line-height: 28px;
+}
+
+.quote {
+  font-size: var(--text-xl);
+  line-height: 28px;
+  font-style: italic;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.subtle {
+  color: var(--color-text-subtle);
+}
+
+.onDark {
+  color: var(--color-text-on-dark-muted);
+}
+
+.onDarkStrong {
+  color: var(--color-text-on-dark);
+}
+
+.center {
+  text-align: center;
+}
+
+.max {
+  max-width: 640px;
+}

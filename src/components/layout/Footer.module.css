@@ -1,0 +1,134 @@
+.footer {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  padding: 80px var(--container-pad);
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+.blurb {
+  max-width: 448px;
+  margin-top: 24px;
+  font-size: var(--text-md);
+  line-height: 20px;
+  color: var(--color-text-nav);
+}
+
+.socialLabel {
+  margin-top: 24px;
+  font-size: var(--text-2xs);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: var(--color-text);
+}
+
+.socialGold {
+  border-color: rgba(164, 129, 71, 0.5);
+}
+
+.colTitle {
+  font-size: var(--text-2xs);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-accent-strong);
+  margin-bottom: 16px;
+}
+
+.col a,
+.col p {
+  display: block;
+  font-size: var(--text-md);
+  line-height: 20px;
+  color: var(--inb-black);
+  margin-bottom: 12px;
+}
+
+.col p {
+  color: var(--color-text-nav);
+}
+
+.legal {
+  border-top: 1px solid var(--color-border);
+  padding: 40px var(--page-gutter) 40px;
+}
+
+.legalInner {
+  display: grid;
+  grid-template-columns: 5fr 4fr 3fr;
+  gap: 32px;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.legalCopy {
+  font-size: var(--text-sm);
+  line-height: 19.5px;
+  color: var(--color-text-legal);
+}
+
+.docs a {
+  display: block;
+  font-size: var(--text-sm);
+  line-height: 16px;
+  color: var(--color-text-legal);
+  margin-bottom: 6px;
+}
+
+.reimburse {
+  max-width: var(--container-max);
+  margin: 24px auto 0;
+  padding: 24px var(--container-pad) 0;
+  border-top: 1px dashed rgba(164, 129, 71, 0.2);
+  font-size: var(--text-xs);
+  line-height: 18px;
+  color: var(--inb-taupe);
+}
+
+.bottom {
+  border-top: 1px solid var(--color-border);
+  padding: 24px var(--page-gutter);
+}
+
+.bottomInner {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .top,
+  .legalInner,
+  .bottomInner {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+}

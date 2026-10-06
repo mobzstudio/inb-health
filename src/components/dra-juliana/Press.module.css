@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.header h2 {
+  margin-top: 16px;
+}
+
+.list {
+  border-top: 1px solid rgba(43, 31, 21, 0.15);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 80px minmax(140px, 3fr) minmax(0, 8fr);
+  gap: 32px;
+  padding: 32px 0 33px;
+  border-bottom: 1px solid rgba(43, 31, 21, 0.15);
+}
+
+.year {
+  font-size: var(--text-sm);
+  color: rgba(92, 74, 58, 0.7);
+}
+
+.outlet {
+  font-size: var(--text-2xs);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+}
+
+.item p {
+  font-size: var(--text-2xl);
+  line-height: 28px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
